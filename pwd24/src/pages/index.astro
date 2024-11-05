@@ -3,18 +3,20 @@ import Three from '../components/three.vue'
 import '../styling/main.css';
 ---
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="generator" content={Astro.generator} />
+        <title>Astro</title>
+    </head>
 
-	<body class="bg-black text-hackgreen relative">
-		  <div class="absolute inset-0 z-0">
-			<Three client:load/>
-		  </div>
-		  <h1 class="relative z-10 text-9xl drop-shadow-greenglow">PASSWORD'24</h1>
+    <body class="bg-black text-hackgreen relative">
+          <div class="absolute inset-0 z-0">
+            <Three client:load/>
+          </div>
+          <h1 class="relative z-5 text-9xl drop-shadow-greenglow">PASSWORD'25</h1>
+		  <!-- <div class="relative z-10 mt-4 mx-auto bg-green-600 h-80"></div> -->
+		<img src="public/media/hud/hud1.gif" alt="Description of GIF" class="relative z-5 mt-4 mx-auto mix-blend-screen bg-green-600" />
 	</body>
 </html>
