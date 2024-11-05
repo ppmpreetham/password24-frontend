@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Minecrafter';
+    src: url('../../public/fonts/Minecrafter.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Minecrafter';
+}

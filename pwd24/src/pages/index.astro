@@ -1,0 +1,19 @@
+---
+import Three from '../components/three.vue'
+import '../styling/main.css';
+
+---
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+
+	<body class="bg-black text-hackgreen">
+		<h1 class="text-9xl drop-shadow-greenglow">PASSWORD'24</h1>
+		<Three client:load/>
+	</body>
+</html>
