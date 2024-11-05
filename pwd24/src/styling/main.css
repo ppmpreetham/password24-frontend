@@ -12,3 +12,11 @@
     box-sizing: border-box;
     font-family: 'Minecrafter';
 }
+  
+::selection {
+  background-color: #22EC08; 
+  color: #ffffff;
+  box-shadow: #22EC08;
+}
+  
+  
