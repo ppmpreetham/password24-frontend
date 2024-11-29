@@ -13,6 +13,21 @@
   src: url(/fonts/Calcio.ttf) format('ttf');
 }
 
+@font-face {
+  font-family: 'Mondwest';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Mondwest.otf) format('otf');
+}
+@font-face {
+  font-family: 'NeueBit';
+  font-style: bold;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/NeueBit.otf) format('otf');
+}
+
 .line{
   width: 100%;
   height: 1px;
@@ -26,5 +41,6 @@ a{
 }
 
 a:hover{
+  text-decoration: underline;
   color: #22EC08;
 }
