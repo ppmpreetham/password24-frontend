@@ -1,9 +1,9 @@
 export default function Footer() {
     return (
         <footer className='flex items-center justify-center flex-col p-4'>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full text-left text-white py-4 uppercase">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 w-full text-left text-white py-4 font-montreal-book uppercase">
                 <div className="text-left">
-                    <h3 className="font-bold">ENIGMA</h3>
+                    <h3 className="font-bold font-montreal-medium">ENIGMA</h3>
                     <ul>
                         <li><a href="https://lugvitc.net/" target="_blank" rel="noopener noreferrer">LUGVITC</a></li>
                         <li><a href="https://type.lugvitc.net/" target="_blank" rel="noopener noreferrer">LUGTYPE</a></li>
@@ -11,7 +11,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div className="text-left">
-                    <h3 className="font-bold">Socials</h3>
+                    <h3 className="font-bold font-montreal-medium">Socials</h3>
                     <ul>
                         <li><a href="https://x.com/lugvitc" target="_blank" rel="noopener noreferrer">Twitter</a></li>
                         <li><a href="https://instagram.com/lugvitc" target="_blank" rel="noopener noreferrer">Instagram</a></li>
@@ -19,7 +19,7 @@ export default function Footer() {
                     </ul>
                 </div>
                 <div className="text-left">
-                    <h3 className="font-bold">VIT Chennai</h3>
+                    <h3 className="font-bold font-montreal-medium">VIT Chennai</h3>
                     <ul>
                         <li>Kelambakkam - Vandalur Rd</li>
                         <li>Rajan Nagar, Chennai, Tamil Nadu</li>

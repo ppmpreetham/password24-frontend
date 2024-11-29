@@ -6,6 +6,10 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        'enigma-green': '#22EC08',
+      },
+
       fontSize: {
         'big-xl': '45rem',
       },
@@ -14,6 +18,8 @@ export default {
         'calcio': ['Calcio', 'sans-serif'],
         'mondwest': ['Mondwest', 'sans-serif'],
         'neuebit': ['NeueBit', 'sans-serif'],
+        'montreal-medium': ['Montreal-Medium', 'sans-serif'],
+        'montreal-book': ['Montreal-Book', 'sans-serif'],
       }
     },
   },

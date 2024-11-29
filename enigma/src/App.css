@@ -3,6 +3,7 @@
   margin: 0 auto;
   padding: 0rem;
   text-align: center;
+  /* cursor: none; */
 }
 
 @font-face {
@@ -27,6 +28,22 @@
   font-weight: 400;
   font-display: swap;
   src: url(/fonts/NeueBit.otf);
+}
+
+@font-face {
+  font-family: 'Montreal-Book';
+  font-style: bold;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Montreal-Book.otf);
+}
+
+@font-face {
+  font-family: 'Montreal-Medium';
+  font-style: bold;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Montreal-Medium.otf);
 }
 
 .line{
