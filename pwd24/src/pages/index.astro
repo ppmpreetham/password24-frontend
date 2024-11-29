@@ -1,6 +1,8 @@
 ---
 import Three from '../components/three.vue'
 import '../styling/main.css';
+import typewritereffect from '../components/typewritereffect.astro';
+
 ---
 <html lang="en">
     <head>
@@ -17,7 +19,14 @@ import '../styling/main.css';
           </div>
           <h1 class="relative z-5 text-9xl drop-shadow-greenglow">PASSWORD'25</h1>
 		  <!-- <div class="relative z-10 mt-4 mx-auto bg-green-600 h-80"></div> -->
-		  <img src="/media/hud/hud1.gif" alt="Description of GIF" class="absolute z-5 mix-blend-screen" />
-		
+		  <!-- <img src="/media/hud/hud1.gif" alt="Description of GIF" class="absolute z-5 mix-blend-screen" /> -->
+		  <typewritereffect 
+        messages={[
+          "System initialization...",
+          "Accessing mainframe...",
+          "Download complete."
+        ]} 
+      />
+	</body>
 		
 </html>

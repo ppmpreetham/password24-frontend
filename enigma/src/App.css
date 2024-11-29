@@ -1,0 +1,30 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0rem;
+  text-align: center;
+}
+
+@font-face {
+  font-family: 'Calcio';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/Calcio.ttf) format('ttf');
+}
+
+.line{
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin: 1rem 0;
+}
+
+a{
+  text-decoration: none;
+  color: #e0e0e0;
+}
+
+a:hover{
+  color: #22EC08;
+}
