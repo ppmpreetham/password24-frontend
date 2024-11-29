@@ -52,13 +52,3 @@
   background-color: #e0e0e0;
   margin: 1rem 0;
 }
-
-a{
-  text-decoration: none;
-  color: #e0e0e0;
-}
-
-a:hover{
-  text-decoration: underline;
-  color: #22EC08;
-}
