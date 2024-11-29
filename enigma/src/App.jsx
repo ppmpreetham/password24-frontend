@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Hamburger from './components/hamburger'
 import Footer from './components/footer'
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
 
   return (
     <>
-      <div className='text-4xl font-calcio'>ENIGMA</div>
+      <Hamburger />
+      <div className='text-4xl font-calcio text-left px-4'>ENIGMA</div>
       <Footer />
     </>
   )

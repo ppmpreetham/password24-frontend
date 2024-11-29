@@ -12,8 +12,8 @@ export default {
 
       fontFamily: {
         'calcio': ['Calcio', 'sans-serif'],
-        'ppmondwest': ['PPMondwest', 'sans-serif'],
-        'ppneuebit': ['PPNeueBit', 'sans-serif'],
+        'mondwest': ['Mondwest', 'sans-serif'],
+        'neuebit': ['NeueBit', 'sans-serif'],
       }
     },
   },

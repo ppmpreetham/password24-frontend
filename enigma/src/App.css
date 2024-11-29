@@ -18,14 +18,15 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/fonts/Mondwest.otf) format('otf');
+  src: url(/fonts/Mondwest.otf);
 }
+
 @font-face {
   font-family: 'NeueBit';
   font-style: bold;
   font-weight: 400;
   font-display: swap;
-  src: url(/fonts/NeueBit.otf) format('otf');
+  src: url(/fonts/NeueBit.otf);
 }
 
 .line{
