@@ -8,10 +8,18 @@ export default {
     extend: {
       colors: {
         'enigma-green': '#22EC08',
+        'bg-black': '#111111',
       },
 
       fontSize: {
         'big-xl': '45rem',
+      },
+
+      dropShadow: {
+        glow: [
+          "0 0px 20px rgba(255,255, 255, 0.35)",
+          "0 0px 65px rgba(255, 255,255, 0.2)"
+        ]
       },
 
       fontFamily: {

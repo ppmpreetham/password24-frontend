@@ -45,7 +45,7 @@ const BackgroundEffect = () => {
       const speed = Math.sqrt(deltaX * deltaX + deltaY * deltaY) / deltaT;
 
       
-      MOVEMENT_RADIUS = Math.min(40, 20 + speed * 10);
+      MOVEMENT_RADIUS = Math.min(50, 20 + speed * 10);
 
       lastMousePosition.current = { x: clientX, y: clientY };
       lastTimestamp.current = timeStamp;
