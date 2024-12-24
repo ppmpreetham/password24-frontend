@@ -24,7 +24,7 @@ const PageNotFound = () => {
                 row.push(
                     <div
                         key={`${i}-${j}`}
-                        className={`cell border border-double border-white w-16 h-16 ${isWhiteCell ? 'bg-white' : 'bg-opacity-0'}`}
+                        className={`cell border border-double border-white w-16 h-16 ${isWhiteCell ? 'bg-enigma-green' : 'bg-opacity-0'}`}
                     ></div>
                 );
             }
@@ -36,7 +36,7 @@ const PageNotFound = () => {
     return (
         <div className="relative bg-bg-black min-h-screen">
             <ErtdfgcvbBG className="absolute inset-0 z-0 h-full w-full"/>
-            <div className="fixed inset-0 flex items-center justify-center bg-opacity-0 z-10">
+            <div className="fixed inset-0 flex items-center justify-center bg-opacity-0 z-10 mix-blend-exclusion">
                 <div className="grid gap-0">
                     {createGrid()}
                 </div>
