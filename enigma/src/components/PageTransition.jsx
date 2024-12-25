@@ -18,12 +18,12 @@ const PageTransition = ({ onComplete }) => {
             { opacity: 1 },
             {
                 opacity: 0,
-                duration: 0.05,
+                duration: 0.1,
                 stagger: {
-                    amount: 0.5,
+                    amount: 0.9,
                     from: "random",
                     grid: "auto",
-                    ease: "power1.inOut"
+                    ease: "steps(12)"
                 },
                 onComplete: () => {
                     container.innerHTML = '';
