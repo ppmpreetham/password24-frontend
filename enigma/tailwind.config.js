@@ -9,6 +9,7 @@ export default {
       colors: {
         'enigma-green': '#22EC08',
         'bg-black': '#111111',
+        'bg-enigma-black': '#111111',
       },
 
       fontSize: {
