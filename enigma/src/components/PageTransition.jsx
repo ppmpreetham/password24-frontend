@@ -19,7 +19,12 @@ const PageTransition = ({ onComplete }) => {
             {
                 opacity: 0,
                 duration: 0.05,
-                stagger: 0.01, 
+                stagger: {
+                    amount: 0.5,
+                    from: "random",
+                    grid: "auto",
+                    ease: "power1.inOut"
+                },
                 onComplete: () => {
                     container.innerHTML = '';
                     onComplete();
