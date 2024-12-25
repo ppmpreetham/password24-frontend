@@ -14,7 +14,7 @@ function Home() {
       <Hamburger />
       <div className='text-4xl font-calcio text-left px-4'>ENIGMA</div>
       <Footer />
-      <BackgroundEffect />
+      {/* <BackgroundEffect /> */}
     </>
   );
 }

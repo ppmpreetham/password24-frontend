@@ -52,3 +52,31 @@
   background-color: #e0e0e0;
   margin: 1rem 0;
 }
+
+.pixel-container {
+  display: flex;
+  flex-wrap: wrap;
+  pointer-events: none;
+}
+
+.pixel {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  margin: 1px;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}

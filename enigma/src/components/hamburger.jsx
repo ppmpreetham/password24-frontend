@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
+import { Link } from 'react-router-dom';
 
 export default function Hamburger() {
     const [isOpen, setIsOpen] = useState(false);
@@ -11,19 +12,23 @@ export default function Hamburger() {
 
     useEffect(() => {
         if (isOpen) {
-            gsap.to(menuRef.current,{
+            gsap.to(menuRef.current, {
                 width: '25%',
                 duration: 0.5,
                 ease: 'back.out(1.6)',
             });
         } else {
-            gsap.to(menuRef.current,{ 
-                width: 'auto', 
+            gsap.to(menuRef.current, {
+                width: 'auto',
                 duration: 0.5,
                 ease: 'back.out(1.6)'
             });
         }
     }, [isOpen]);
+
+    const handleLinkClick = () => {
+        setIsOpen(false);
+    };
 
     return (
         <div className="flex justify-end">
@@ -34,10 +39,10 @@ export default function Hamburger() {
                 {isOpen && (
                     <div className="menu text-right text-3xl p-4">
                         <ul>
-                            <li><a className="text-black hover:bg-white hover:text-black" href="#home">Prizes</a></li>
-                            <li><a className="text-black hover:bg-white hover:text-black" href="#about">Timeline</a></li>
-                            <li><a className="text-black hover:bg-white hover:text-black" href="#services">Rules</a></li>
-                            <li><a className="text-black hover:bg-white hover:text-black" href="#contact">About</a></li>
+                            <li><a className="text-black hover:bg-white hover:text-black" href="#Prizes" onClick={handleLinkClick}>Prizes</a></li>
+                            <li><a className="text-black hover:bg-white hover:text-black" href="#timeline" onClick={handleLinkClick}>Timeline</a></li>
+                            <li><a className="text-black hover:bg-white hover:text-black" href="#rules" onClick={handleLinkClick}>Rules</a></li>
+                            <li><Link className="text-black hover:bg-white hover:text-black" to="/about" onClick={handleLinkClick}>About</Link></li>
                         </ul>
                     </div>
                 )}
