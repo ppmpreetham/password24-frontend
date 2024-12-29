@@ -1,7 +1,5 @@
-/* Import Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&display=swap');
 
-/* Root Variables for Theme */
 :root {
     font-family: 'Orbitron', sans-serif;
     line-height: 1.5;
@@ -15,7 +13,6 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Keyframes for roaming line */
 @keyframes roaming-line {
     0% {
         border-top: 2px solid #1cd41c;
@@ -73,7 +70,6 @@ h2 {
     letter-spacing: 2px;
 }
 
-/* Signup Container */
 .signup-container {
     background-color: #1a1a1a;
     padding: 30px;
@@ -88,7 +84,6 @@ h2 {
     border: 2px solid transparent;
 }
 
-/* Input Fields */
 .input-field {
     width: 100%;
     padding: 10px;
@@ -103,7 +98,6 @@ h2 {
     letter-spacing: 1px;
 }
 
-/* Glow effect on input fields when focused or hovered */
 .input-field:focus,
 .input-field:hover {
     transform: translateY(-4px);
@@ -111,14 +105,12 @@ h2 {
     box-shadow: 0 0 8px 2px rgba(28, 212, 28, 0.8);
 }
 
-/* Placeholder */
 .input-field::placeholder {
     color: #1cd41c;
     font-family: 'Orbitron', sans-serif;
     letter-spacing: 1px;
 }
 
-/* Labels */
 p {
     font-size: 1em;
     color: #bbb;
@@ -133,7 +125,6 @@ p:hover {
     color: #1cd41c;
 }
 
-/* Button Styles */
 .btn {
     width: 100%;
     padding: 12px;
@@ -152,7 +143,6 @@ p:hover {
     text-transform: uppercase;
 }
 
-/* Glowing effect on button when hovered or focused */
 .btn:hover,
 .btn:focus {
     transform: translateY(-4px);
@@ -162,7 +152,6 @@ p:hover {
     border-color: #1cd41c;
 }
 
-/* Back to Login Button */
 .btn-back {
     background-color: transparent;
     color: #888;
@@ -187,7 +176,6 @@ p:hover {
     justify-content: center;
 }
 
-/* Light mode styles */
 @media (prefers-color-scheme: light) {
     :root {
         color: #213547;
