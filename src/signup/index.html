@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Enigma25</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+    <div class="signup-container">
+        <h2>Enigma25 Sign Up</h2>
+        <form action="/submit_signup" method="POST">
+            <p>Username</p>
+            <input type="text" class="input-field" placeholder="Choose a username" name="username" required><br>
+            
+            <p>Email</p>
+            <input type="email" class="input-field" placeholder="Enter your email" name="email" required><br>
+            
+            <p>Password</p>
+            <input type="password" class="input-field" placeholder="Choose a password" name="password" required><br>
+            
+            <p>Confirm Password</p>
+            <input type="password" class="input-field" placeholder="Confirm your password" name="confirm_password" required><br>
+            
+            <button type="submit" class="btn">Create Account</button>
+        </form>
+        <a href="login" class="back-link">
+            <button type="button" class="btn btn-back">Back to Login</button>
+        </a>
+    </div>
+</body>
+</html>
