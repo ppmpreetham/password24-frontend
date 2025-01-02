@@ -86,6 +86,50 @@ function CameraAnimation() {
   return null;
 }
 
+function Sphere({ position }) {
+  const sphereRef = useRef();
+
+  useEffect(() => {
+    if (sphereRef.current) {
+      gsap.to(sphereRef.current.scale, {
+        x: 1.5,
+        y: 1.5,
+        z: 1.5,
+        duration: 1,
+        yoyo: true,
+        repeat: -1,
+        ease: "sine.inOut",
+      });
+    }
+  }, []);
+
+  return (
+    <mesh ref={sphereRef} position={position}>
+      <sphereGeometry args={[1, 32, 32]} />
+      <meshStandardMaterial color="orange" emissive="green" />
+    </mesh>
+  );
+}
+
+function Spheres() {
+  const positions = [
+    new THREE.Vector3(0, 5, 0),
+    new THREE.Vector3(1, 5, -10),
+    new THREE.Vector3(20, 5, -20),
+    new THREE.Vector3(30, 5, -30),
+    new THREE.Vector3(40, 5, -40),
+    new THREE.Vector3(50, 5, -40),
+  ];
+
+  return (
+    <>
+      {positions.map((position, index) => (
+        <Sphere key={index} position={position} />
+      ))}
+    </>
+  );
+}
+
 function Timeline() {
   return (
     <div className="h-screen">
@@ -95,7 +139,6 @@ function Timeline() {
           fov: 45,
           rotation: [-0,25, 0, 0]
         }}
-
         className="w-full h-full"
         gl={{ alpha: false, antialias: true }}
       >
@@ -103,6 +146,7 @@ function Timeline() {
           <CameraAnimation />
           <Scene />
           <AnimatedPlane />
+          <Spheres />
         </ScrollControls>
       </Canvas>
     </div>
