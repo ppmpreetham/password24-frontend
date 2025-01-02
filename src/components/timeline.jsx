@@ -56,7 +56,7 @@ function Scene() {
 
   useEffect(() => {
     scene.fog = new THREE.FogExp2('#111111', 0.02);
-    // gl.setClearColor('#111111');
+    gl.setClearColor('#111111');
   }, [scene, gl]);
 
   return null;
@@ -91,6 +91,8 @@ function Sphere({ position }) {
 
   useEffect(() => {
     if (sphereRef.current) {
+      const randomOffset = 2*Math.random();
+
       gsap.to(sphereRef.current.scale, {
         x: 1.5,
         y: 1.5,
@@ -99,6 +101,16 @@ function Sphere({ position }) {
         yoyo: true,
         repeat: -1,
         ease: "sine.inOut",
+        delay: randomOffset,
+      });
+
+      gsap.to(sphereRef.current.position, {
+        y: 5,
+        duration: 1,
+        yoyo: true,
+        repeat: -1,
+        ease: "sine.inOut",
+        delay: randomOffset,
       });
     }
   }, []);

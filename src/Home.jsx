@@ -10,10 +10,11 @@ function Home() {
 
   return (
     <>
+      
       {/* <MovableSquare /> */}
-      <Timeline/>
       <Hamburger />
       <div className='text-4xl font-calcio text-left px-4'>ENIGMA</div>
+      <Timeline/>
       <Footer />
       {/* <BackgroundEffect /> */}
     </>
