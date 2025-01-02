@@ -91,7 +91,7 @@ function Sphere({ position }) {
 
   useEffect(() => {
     if (sphereRef.current) {
-      const randomOffset = 2*Math.random();
+      const randomOffset = Math.random();
 
       gsap.to(sphereRef.current.scale, {
         x: 1.5,
@@ -105,7 +105,7 @@ function Sphere({ position }) {
       });
 
       gsap.to(sphereRef.current.position, {
-        y: 5,
+        y: 4.5,
         duration: 1,
         yoyo: true,
         repeat: -1,
@@ -118,7 +118,7 @@ function Sphere({ position }) {
   return (
     <mesh ref={sphereRef} position={position}>
       <sphereGeometry args={[1, 32, 32]} />
-      <meshStandardMaterial color="orange" emissive="green" />
+      <meshStandardMaterial color="green" emissive="green" />
     </mesh>
   );
 }
