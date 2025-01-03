@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { Link } from 'react-router-dom';
+import AnimatedText from './text';
 
 export default function Hamburger() {
     const [isOpen, setIsOpen] = useState(false);
@@ -40,10 +41,10 @@ export default function Hamburger() {
                 {isOpen && (
                     <div className="menu text-right text-3xl p-4">
                         <ul>
-                            <li><a className="text-black hover:bg-white hover:text-black" href="#Prizes" onClick={handleLinkClick}>Prizes</a></li>
-                            <li><a className="text-black hover:bg-white hover:text-black" href="#timeline" onClick={handleLinkClick}>Timeline</a></li>
-                            <li><a className="text-black hover:bg-white hover:text-black" href="#rules" onClick={handleLinkClick}>Rules</a></li>
-                            <li><Link className="text-black hover:bg-white hover:text-black" to="/about" onClick={handleLinkClick}>About</Link></li>
+                            <li><Link to="/prizes" onClick={handleLinkClick}><AnimatedText className="text-black hover:bg-white hover:text-black" text="Prizes"/></Link></li>
+                            <li><Link to="/timeline" onClick={handleLinkClick}><AnimatedText className="text-black hover:bg-white hover:text-black" text="Timeline"/></Link></li>
+                            <li><Link to="/rules" onClick={handleLinkClick}><AnimatedText className="text-black hover:bg-white hover:text-black" text="Rules"/></Link></li>
+                            <li><Link to="/about" onClick={handleLinkClick}><AnimatedText text="About" className="text-black hover:bg-white hover:text-black"/></Link></li>
                         </ul>
                     </div>
                 )}

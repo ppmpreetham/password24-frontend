@@ -7,6 +7,8 @@ import MovableSquare from './components/cursor';
 import BackgroundEffect from './components/background-hover';
 import Timeline from './components/timeline';
 import ErtdfgcvbBG from './components/ertdfgcvb cube';
+import AnimatedText from './components/text';
+
 function Home() {
   const [count, setCount] = useState(0);
 
@@ -19,7 +21,7 @@ function Home() {
           <Hamburger className='fixed right-0'/>
         </nav>
         <ErtdfgcvbBG className='z-0'/>
-        <h2 className="font-neuebit uppercase text-9xl">TIMELINE</h2>
+        <AnimatedText text="TIMELINE" className="font-neuebit uppercase text-9xl"/>
         <Timeline className='w-full z-10'/>
         <Footer />
         {/* <BackgroundEffect /> */}
