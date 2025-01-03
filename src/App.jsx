@@ -12,6 +12,7 @@ import PageNotFound from "./404";
 import PageTransition from "./components/PageTransition";
 import { gsap } from "gsap";
 import './App.css';
+import Privacy from "./privacy";
 
 function App() {
     const location = useLocation();
@@ -42,6 +43,7 @@ function App() {
                         <Route exact path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/sign-up" element={<SignUp />} />
+                        <Route path="privacy" element={<Privacy />} />
                         <Route path="*" element={<PageNotFound />} />
                     </Routes>
                 </CSSTransition>
