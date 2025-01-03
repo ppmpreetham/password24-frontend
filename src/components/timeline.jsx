@@ -1,6 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
-import { Plane, OrbitControls, ScrollControls, useScroll } from '@react-three/drei';
+import { Plane, ScrollControls, useScroll } from '@react-three/drei';
 import { createNoise2D } from 'simplex-noise';
 import * as THREE from 'three';
 import { gsap } from 'gsap';
@@ -29,34 +29,12 @@ function AnimatedPlane() {
   );
 }
 
-function CameraControls() {
-  const controlsRef = useRef();
-  const { camera, gl } = useThree();
-
-  useEffect(() => {
-    const controls = controlsRef.current;
-    const handleChange = (event) => {
-      console.log("Position:");
-      console.log(controls.object.position);
-      console.log("Rotation:");
-      console.log(controls.object.rotation);
-    };
-    controls.addEventListener('change', handleChange);
-
-    return () => {
-      controls.removeEventListener('change', handleChange);
-    };
-  }, []);
-
-  return <OrbitControls ref={controlsRef} args={[camera, gl.domElement]} />;
-}
-
 function Scene() {
   const { scene, gl } = useThree();
 
   useEffect(() => {
     scene.fog = new THREE.FogExp2('#111111', 0.02);
-    gl.setClearColor('#111111');
+    gl.setClearColor('#000000', 0 );
   }, [scene, gl]);
 
   return null;
@@ -93,17 +71,6 @@ function Sphere({ position }) {
     if (sphereRef.current) {
       const randomOffset = Math.random();
 
-      gsap.to(sphereRef.current.scale, {
-        x: 1.5,
-        y: 1.5,
-        z: 1.5,
-        duration: 1,
-        yoyo: true,
-        repeat: -1,
-        ease: "sine.inOut",
-        delay: randomOffset,
-      });
-
       gsap.to(sphereRef.current.position, {
         y: 4.5,
         duration: 1,
@@ -118,7 +85,7 @@ function Sphere({ position }) {
   return (
     <mesh ref={sphereRef} position={position}>
       <sphereGeometry args={[1, 32, 32]} />
-      <meshStandardMaterial color="green" emissive="green" />
+      <meshStandardMaterial color="#22ec08" emissive="#22ec08" />
     </mesh>
   );
 }
@@ -152,7 +119,7 @@ function Timeline() {
           rotation: [-0,25, 0, 0]
         }}
         className="w-full h-full"
-        gl={{ alpha: false, antialias: true }}
+        gl={{ alpha: true, antialias: true }}
       >
         <ScrollControls pages={6} damping={1}>
           <CameraAnimation />
