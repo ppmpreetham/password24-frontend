@@ -12,7 +12,7 @@ import PageNotFound from "./404";
 import PageTransition from "./components/PageTransition";
 import { gsap } from "gsap";
 import './App.css';
-import ErtdfgcvbBG from "./components/ertdfgcvbprivacy";
+import ErtdfgcvbBGprivacy from "./components/ertdfgcvbprivacy";
 
 function App() {
     const location = useLocation();
@@ -43,7 +43,7 @@ function App() {
                         <Route exact path="/" element={<Home />} />
                         <Route path="/about" element={<About />} />
                         <Route path="/sign-up" element={<SignUp />} />
-                        <Route path="/privacy" element={<ErtdfgcvbBG />} />
+                        <Route path="/privacy" element={<ErtdfgcvbBGprivacy />} />
                         <Route path="*" element={<PageNotFound />} />
                     </Routes>
                 </CSSTransition>
