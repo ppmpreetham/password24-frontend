@@ -1,22 +1,25 @@
 import React, { useRef, useEffect } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { Plane, ScrollControls, useScroll } from '@react-three/drei';
-import { createNoise2D } from 'simplex-noise';
+import { createNoise4D } from 'simplex-noise';
 import * as THREE from 'three';
 import { gsap } from 'gsap';
 
-const noise2D = createNoise2D();
-const height = 0.1;
+const noise4D = createNoise4D();
+const height = 0.08;
+const speed = 0.75;
 
 function AnimatedPlane() {
   const ref = useRef();
+  const timeRef = useRef(0);
 
-  useFrame(() => {
+  useFrame((state, delta) => {
     const vertices = ref.current.geometry.attributes.position.array;
+    timeRef.current += delta;
     for (let i = 0; i < vertices.length; i += 3) {
       const x = vertices[i];
       const y = vertices[i + 1];
-      const z = noise2D(x * height, y * height);
+      const z = noise4D(x * height, y * height, 0, timeRef.current*speed);
       vertices[i + 2] = z;
     }
     ref.current.geometry.attributes.position.needsUpdate = true;
