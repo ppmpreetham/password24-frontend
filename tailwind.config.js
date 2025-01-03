@@ -16,7 +16,9 @@ export default {
         'big-phone-xl': '55vw',
         'big-desktop-xl': '58vw',
       },
-
+      height: {
+        'big-height': '110vh',
+      },
       dropShadow: {
         glow: [
           "0 0px 20px rgba(255,255, 255, 0.35)",

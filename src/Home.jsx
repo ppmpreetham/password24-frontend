@@ -22,7 +22,7 @@ function Home() {
         </nav>
         <ErtdfgcvbBG className='z-0'/>
         <AnimatedText text="TIMELINE" className="font-neuebit uppercase text-9xl"/>
-        <Timeline className='w-full z-10'/>
+        <Timeline className='z-10'/>
         <Footer />
         {/* <BackgroundEffect /> */}
     </div>
