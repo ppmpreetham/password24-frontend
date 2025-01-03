@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import ErtdfgcvbBG from './components/ertdfgcvb bg';
+import ErtdfgcvbBG from './components/ertdfgcvb game of life';
 import { gsap } from 'gsap';
 
 const PageNotFound = () => {

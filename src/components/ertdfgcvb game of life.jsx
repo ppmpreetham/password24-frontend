@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import { run } from '../assets/ertdfgcvb/src/run.js';
-import * as program from '../assets/ertdfgcvb/src/programs/basics/time_milliseconds.js';
+import { run } from '../assets/ertdfgcvb/programsJS/src/run.js';
+import * as program from '../assets/ertdfgcvb/programsJS/time_milliseconds.js';
 import '../assets/ertdfgcvb/style.css';
 
 const ErtdfgcvbBG = () => {
