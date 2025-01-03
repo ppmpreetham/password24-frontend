@@ -35,8 +35,9 @@ export default function Hamburger() {
     return (
         <div className="flex justify-end">
             <div ref={menuRef} className={`flex flex-col justify-end text-black bg-enigma-green font-neuebit uppercase ${isOpen ? 'w-full' : 'w-auto'}`}>
-                <div className="hamburger-icon cursor-pointer text-2xl select-none text-right p-4" onClick={toggleMenu}>
-                    Menu <span className="text-xl">&#9776;</span> {/* This is the hamburger icon */}
+                <div className="hamburger-icon cursor-pointer text-2xl select-none text-right p-4 flex items-center justify-end" onClick={toggleMenu}>
+                    <AnimatedText text="MENU" className="mr-2"/>
+                    <span className="text-xl mt-1">&#9776;</span> {/* Hamburger icon */}
                 </div>
                 {isOpen && (
                     <div className="menu text-right text-3xl p-4">
