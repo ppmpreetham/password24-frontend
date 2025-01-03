@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login-page.css">
+</head>
+<body>
+    <div class="login-container">
+        <h2>Enigma25 Login</h2>
+        <form action="/submit_login" method="POST">
+            <p>Username</p>
+            <input type="text" class="input-field" placeholder="Username" name="username" required><br>
+            <p>Password</p>
+            <input type="password" class="input-field" placeholder="Password" name="password" required><br>
+            <button type="submit" class="btn">Login</button>
+        </form>
+        <a href="enigma25/src/signup/index.html" style="width: 100%; text-decoration: none;">
+          <button type="button" class="btn btn-signup">Sign Up</button>
+        </a>
+    </div>
+</body>
+</html>
+
