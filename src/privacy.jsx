@@ -1,4 +1,4 @@
-import ErtdfgcvbBG from "./components/ertdfgcvbPrivacy";
+import ErtdfgcvbBG from "./components/ertdfgcvbprivacy";
 
 export default function Privacy() {
     return(
