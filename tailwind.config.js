@@ -13,7 +13,8 @@ export default {
       },
 
       fontSize: {
-        'big-xl': '45rem',
+        'big-phone-xl': '55vw',
+        'big-desktop-xl': '58vw',
       },
 
       dropShadow: {

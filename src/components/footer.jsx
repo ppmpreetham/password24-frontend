@@ -28,7 +28,7 @@ export default function Footer() {
                 </div>
             </div>
             <div className="line w-full my-4"></div>
-            <p className="text-big-xl font-calcio text-white responsive-text">ENIGMA</p>
+            <p className="text-big-phone-xl font-calcio text-white responsive-text lg:text-big-desktop-xl">ENIGMA</p>
         </footer>
     )
 }
