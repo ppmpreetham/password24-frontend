@@ -13,10 +13,11 @@ export default function Hamburger() {
     useEffect(() => {
         if (isOpen) {
             gsap.to(menuRef.current, {
-                width: '25%',
+                width: '100%',
                 duration: 0.5,
                 ease: 'back.out(1.6)',
             });
+
         } else {
             gsap.to(menuRef.current, {
                 width: 'auto',
@@ -32,7 +33,7 @@ export default function Hamburger() {
 
     return (
         <div className="flex justify-end">
-            <div ref={menuRef} className={`flex flex-col justify-end text-black bg-enigma-green font-neuebit uppercase ${isOpen ? 'w-1/2' : 'w-auto'}`}>
+            <div ref={menuRef} className={`flex flex-col justify-end text-black bg-enigma-green font-neuebit uppercase ${isOpen ? 'w-full' : 'w-auto'}`}>
                 <div className="hamburger-icon cursor-pointer text-2xl select-none text-right p-4" onClick={toggleMenu}>
                     Menu <span className="text-xl">&#9776;</span> {/* This is the hamburger icon */}
                 </div>
